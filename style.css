@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -31,6 +32,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 260px;
 }
 
 .rightSide {
@@ -43,6 +45,21 @@ a {
   position: absolute;
   bottom: 10px;
   font-size: 15px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 28px;
+}
+.logo img {
+  width: 150px;
+  height: auto;
 }
 .intro {
   margin-top: 60px;
@@ -74,7 +91,7 @@ input:invalid {
 }
 
 input:focus {
-  border: 2px solid #2684ff; 
+  border: 2px solid #2684ff;
   outline: none;
   box-shadow: 0 0 5px rgba(38, 132, 255, 0.5);
 }
@@ -129,4 +146,11 @@ label {
     height: auto;
     overflow-y: visible;
   }
+}
+@media (max-width: 580px)
+{
+    .form-row
+    {
+        flex-direction: column;
+    }
 }
